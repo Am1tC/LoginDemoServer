@@ -1,6 +1,7 @@
 ﻿Create Database LoginDemoDB
 Go
-
+use LoginDemoDB
+Go
 
 Create Table Users (
 	Email nvarchar(100) PRIMARY KEY,
@@ -30,8 +31,7 @@ Go
 	go
 	INSERT INTO dbo.Grades Values('101','computer-science','ofer@ofer.com','06-april-2024')
 
-	drop  Database LoginDemoDB
-	GO
+	
 
 
 --scaffold-DbContext "Server = (localdb)\MSSQLLocalDB;Initial Catalog=LoginDemoDB;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=False;Trust Server Certificate=False;Command Timeout=0" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models -Context LoginDemoDbContext -DataAnnotations -force
